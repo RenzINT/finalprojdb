@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
 }
 
-/* Layout (Flexbox) */
+
 main {
     display: flex;
     gap: 30px;
@@ -19,17 +19,17 @@ main {
     margin: auto;
 }
 
-/* Form Section Styling */
+
 #form-section {
     background-color: #a7c5f8; 
     padding: 40px;
-    border-radius: 25px; /* Visual polish [cite: 24] */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Visual polish [cite: 24] */
+    border-radius: 25px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
     flex: 1;
     min-width: 370px;
 }
 
-/* Form Elements */
+
 form { display: flex; flex-direction: column; gap: 15px; }
 input, select { padding: 12px; border: none; border-radius: 10px; background-color: #d1e3ff; }
 
@@ -41,12 +41,12 @@ button {
     border-radius: 10px; 
     cursor: pointer; 
     font-weight: bold;
-    transition: background-color 0.3s ease; /* Transition effect [cite: 25] */
+    transition: background-color 0.3s ease; 
 }
 
-button:hover { background-color: #0d2a7a; } /* Hover effect [cite: 25] */
+button:hover { background-color: #0d2a7a; } 
 
-/* Table Styling */
+
 #table-section {
     flex: 1;
     min-width: 300px;
@@ -58,8 +58,8 @@ table { width: 100%; border-collapse: collapse; }
 th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
 th { background-color: #1a3d9e; color: white; }
 
-/* Responsive Design */
-@media (max-width: 768px) { /* Media query for responsiveness  */
+
+@media (max-width: 768px) { 
     main { flex-direction: column; }
     #form-section, #table-section { border-radius: 15px; }
 }
